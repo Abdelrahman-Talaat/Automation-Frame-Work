@@ -15,5 +15,6 @@ public class chromeDriverFactory extends driverAbstract{
         option.addArguments("--remote-allow-origins=*","ignore-certificate-errors");
          driver=new ChromeDriver(option);
 
+
     }
 }

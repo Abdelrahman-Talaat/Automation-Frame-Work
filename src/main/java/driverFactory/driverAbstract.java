@@ -8,7 +8,7 @@ public abstract class  driverAbstract {
 
     public abstract void startDriver();
 
-    public void quit(){
+    public  void quit(){
         if (driver!=null){
             driver.quit();
             driver=null;

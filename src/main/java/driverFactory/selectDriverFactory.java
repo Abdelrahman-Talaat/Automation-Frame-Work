@@ -1,32 +1,41 @@
 package driverFactory;
 
 
+import ElementActions.ElementActions;
 import constants.driverType;
 import org.openqa.selenium.WebDriver;
 
 public class selectDriverFactory {
-    public static  ThreadLocal<WebDriver> driverThreadLocal=new ThreadLocal<>();
+
+    public static WebDriver driver;
+    public selectDriverFactory(){
+
+    }
+
 
     public static WebDriver getDriverFactory(driverType driverType){
            switch (driverType){
                case CHROME ->{
-                 driverThreadLocal.set( new chromeDriverFactory().getDriver());
-                 return driverThreadLocal.get();
+                 driver=new chromeDriverFactory().getDriver();
+                 return driver;
                }
-               case FIREFOx -> {
-                   driverThreadLocal.set( new fireFoxDriverFactory().getDriver());
-                   return driverThreadLocal.get();
+               case FIREFOX -> {
+                 driver=new fireFoxDriverFactory().getDriver();
+                   return driver;
                }
                case EDGE -> {
-                   driverThreadLocal.set( new edgeDriverFactory().getDriver());
-                   return driverThreadLocal.get();
+                   driver=new edgeDriverFactory().getDriver();
+                   return driver;
                }
                default -> throw new IllegalStateException("Unexpected value: " + driverType);
            }
     }
 
-public void quit(){
-        driverThreadLocal.get().quit();
+     public void quit(){
+        driver.quit();
+}
+     public synchronized ElementActions element(){
+        return new ElementActions(driver);
 }
 
 }

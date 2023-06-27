@@ -5,6 +5,8 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeDriverService;
 import org.openqa.selenium.edge.EdgeOptions;
 
+import java.time.Duration;
+
 public class edgeDriverFactory extends driverAbstract{
     @Override
     public void startDriver() {
@@ -13,5 +15,6 @@ public class edgeDriverFactory extends driverAbstract{
         EdgeOptions option=new EdgeOptions();
         option.addArguments("--remote-allow-origins=*","ignore-certificate-errors");
         driver=new EdgeDriver(option);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1));
     }
 }

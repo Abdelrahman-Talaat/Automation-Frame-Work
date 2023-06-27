@@ -1,11 +1,19 @@
 package Pages;
 
+import ElementActions.ElementActions;
+import driverFactory.selectDriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.Assert;
 
+import static ElementActions.ElementActions.actionDriver;
+import static driverFactory.selectDriverFactory.driver;
+
 public class RegistrationPage {
-    protected WebDriver driver;
+
+
+
     By genderMaleLocator= By.xpath("//input[@id='gender-male']");
     By firstNameLocator=By.xpath("//input[@id='FirstName']");
     By lastNameLocator=By.xpath("//input[@id='LastName']");
@@ -18,12 +26,22 @@ public class RegistrationPage {
     By enterConfirmPassword=By.xpath("//input[@id='ConfirmPassword']");
     By buttonLocator=By.xpath("//button[@id='register-button']");
     By registrationMessageLocator=By.xpath("//div[@class='result']");
-    public RegistrationPage (WebDriver driver){
-        this.driver=driver;
+
+    protected WebDriver driver;
+ /*   public ThreadLocal<selectDriverFactory> eDriver=new ThreadLocal<>();*/
+        public RegistrationPage (WebDriver driver){
+
+      this.driver=driver;
     }
+    ElementActions eAction=new ElementActions(this.driver);
+
 
     public void selectGender(){
-        driver.findElement(genderMaleLocator).click();
+     /*   driver.findElement(genderMaleLocator).click();*/
+         /*driver.clickButton(genderMaleLocator);*/
+        /*eDriver.get().element().clickButton(genderMaleLocator);*/
+        eAction.clickButton(genderMaleLocator);
+
     }
 
     public void enterFirstName( String firstName){

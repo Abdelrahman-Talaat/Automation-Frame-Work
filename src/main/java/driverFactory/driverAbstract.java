@@ -1,5 +1,6 @@
 package driverFactory;
 
+import ElementActions.ElementActions;
 import org.openqa.selenium.WebDriver;
 
 public abstract class  driverAbstract {
@@ -20,6 +21,10 @@ public abstract class  driverAbstract {
             startDriver();
         }
         return driver;
+    }
+
+    public ElementActions element(){
+        return new ElementActions(getDriver());
     }
 
 

@@ -1,12 +1,18 @@
 package Pages;
 
+import driverFactory.selectDriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class homePage {
-    public WebDriver driver;
+import static driverFactory.selectDriverFactory.driver;
 
-    public homePage (WebDriver driver){
+public class homePage {
+
+
+     public WebDriver driver;
+
+
+   public homePage (WebDriver driver){
         this.driver=driver;
     }
 

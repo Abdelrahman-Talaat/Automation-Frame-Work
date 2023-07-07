@@ -19,7 +19,7 @@ public class BaseTest  {
          driver.set(selectDriverFactory.getDriverFactory(driverType.valueOf(browser)));
          driver.get().get("https://demo.nopcommerce.com/");
     }
-    /*@AfterClass
+   /* @AfterClass
     public void tearDown(){
         driver.get().quit();
         *//*new AllureReportBuilder("1.5.4", new File("target/allure-report")).unpackFace();

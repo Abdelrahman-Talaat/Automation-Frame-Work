@@ -14,18 +14,19 @@ public  class RegistrationTest extends BaseTest {
     @Test (suiteName = "registration")
     public void registrationTest(){
         home=new homePage(driver.get());
-        registration=new RegistrationPage(driver.get());
         registration=home.clickRegistrationPage();
         registration.selectGender();
-      /*  registration.enterFirstName("Abdelrahman");
-        registration.enterLastName("Talaat");
+        registration.enterFirstName();
+        registration.enterLastName();
         registration.enterDOB();
-        registration.enterEmail("abdelrahmantalaat26@gmail.com");
-        registration.enterCompanyName("Etisalat");
-        registration.enterPassword("Abdelrahman");
-        registration.enterConfirmPassword("Abdelrahman");
+        registration.enterEmail();
+        registration.enterCompanyName();
+        registration.enterPassword();
+        registration.enterConfirmPassword();
         registration.clickRegisterButton();
-        registration.getRegistrationMessage();*/
+        registration.getRegistrationMessage();
+        registration.clickContinueButton();
+        registration.getWelcomeMessage();
     }
 
 }

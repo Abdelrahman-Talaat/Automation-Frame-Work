@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.Assert;
+import utilities.UserFormData;
 
 import static ElementActions.ElementActions.actionDriver;
 import static driverFactory.selectDriverFactory.driver;
@@ -26,61 +27,73 @@ public class RegistrationPage {
     By enterConfirmPassword=By.xpath("//input[@id='ConfirmPassword']");
     By buttonLocator=By.xpath("//button[@id='register-button']");
     By registrationMessageLocator=By.xpath("//div[@class='result']");
+    By continueButtonLocator=By.xpath("//a[@ class='button-1 register-continue-button']");
+    By welcomeMessageLocator=By.xpath("//div[@class='topic-block'] /div/h2");
+
 
     protected WebDriver driver;
+    ElementActions eAction;
+    UserFormData userData;
  /*   public ThreadLocal<selectDriverFactory> eDriver=new ThreadLocal<>();*/
         public RegistrationPage (WebDriver driver){
-
-      this.driver=driver;
+            this.driver=driver;
+            eAction=new ElementActions(driver);
+            userData=new UserFormData(driver);
     }
-    ElementActions eAction=new ElementActions(this.driver);
+
 
 
     public void selectGender(){
-     /*   driver.findElement(genderMaleLocator).click();*/
-         /*driver.clickButton(genderMaleLocator);*/
-        /*eDriver.get().element().clickButton(genderMaleLocator);*/
-        eAction.clickButton(genderMaleLocator);
-
+        eAction.click(genderMaleLocator);
     }
 
-    public void enterFirstName( String firstName){
-        driver.findElement(firstNameLocator).sendKeys(firstName);
+    public void enterFirstName(){
+        eAction.sendData(userData.getFirstName(),firstNameLocator);
     }
 
-    public void enterLastName(String lastName){
-        driver.findElement(lastNameLocator).sendKeys(lastName);
+    public void enterLastName(){
+
+            eAction.sendData(userData.getLastName(),lastNameLocator);
     }
 
     public void enterDOB(){
-        driver.findElement(selectDateOfBirthDay).click();
-        driver.findElement(selectDateOfBirthMonth).click();
-        driver.findElement(selectDateOfBirthYear).click();
+        eAction.click(selectDateOfBirthDay);
+        eAction.click(selectDateOfBirthMonth);
+        eAction.click(selectDateOfBirthYear);
     }
 
-    public void enterEmail(String email){
-        driver.findElement(enterEmailLocator).sendKeys(email);
+    public void enterEmail(){
+            eAction.sendData(userData.getEmail(),enterEmailLocator);
     }
 
-    public void enterCompanyName(String companyName){
-        driver.findElement(enterCompanyName).sendKeys(companyName);
+    public void enterCompanyName(){
+        eAction.sendData(userData.getCompanyName(),enterCompanyName);
     }
 
-    public void enterPassword(String password){
-        driver.findElement(enterPassword).sendKeys(password);
+    public void enterPassword(){
+        eAction.sendData(userData.getNewPassword(),enterPassword);
     }
 
-    public void enterConfirmPassword(String ConfirmPassword){
-        driver.findElement(enterConfirmPassword).sendKeys(ConfirmPassword);
+    public void enterConfirmPassword(){
+        eAction.sendData(userData.getNewPassword(), enterConfirmPassword);
     }
 
     public void clickRegisterButton(){
-        driver.findElement(buttonLocator).click();
+        eAction.click(buttonLocator);
+    }
+
+    public void clickContinueButton(){
+            eAction.click(continueButtonLocator);
+    }
+
+    public void getWelcomeMessage(){
+        Assert.assertEquals(eAction.getText(welcomeMessageLocator),"Welcome to our store");
     }
 
     public void getRegistrationMessage(){
-        Assert.assertEquals(driver.findElement(registrationMessageLocator).getText(),"Your registration completed");
+        Assert.assertEquals(eAction.getText(registrationMessageLocator),"Your registration completed");
     }
+
 
 
 

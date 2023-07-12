@@ -1,17 +1,19 @@
 package pages;
 
 import BaseTest.BaseTest;
-import ElementActions.ElementActions;
+import Listners.IRetryAnalyzerClass;
 import Pages.RegistrationPage;
 import Pages.homePage;
-import driverFactory.selectDriverFactory;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public  class RegistrationTest extends BaseTest {
     homePage home;
     RegistrationPage registration;
 
-    @Test (suiteName = "registration")
+
+    @Test  (suiteName = "registration"/*,retryAnalyzer = IRetryAnalyzerClass.class*/)
+
     public void registrationTest(){
         home=new homePage(driver.get());
         registration=home.clickRegistrationPage();
@@ -27,6 +29,7 @@ public  class RegistrationTest extends BaseTest {
         registration.getRegistrationMessage();
         registration.clickContinueButton();
         registration.getWelcomeMessage();
+        /*Assert.assertTrue(false);*/
     }
 
 }

@@ -34,6 +34,9 @@ public class selectDriverFactory {
      public void quit(){
         driver.quit();
 }
+public WebDriver getDriver(){
+        return driver;
+}
      public synchronized ElementActions element(){
         return new ElementActions(driver);
 }

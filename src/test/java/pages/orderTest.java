@@ -3,6 +3,7 @@ package pages;
 import BaseTest.BaseTest;
 import Pages.computersPage;
 import Pages.homePage;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
@@ -16,6 +17,9 @@ import java.util.concurrent.TimeUnit;
 public class orderTest extends BaseTest {
     homePage home;
     computersPage computer;
+
+
+
     @Test
     public void computerOrderTest() throws InterruptedException {
         home=new homePage(driver.get());

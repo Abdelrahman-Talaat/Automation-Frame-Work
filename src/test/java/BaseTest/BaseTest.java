@@ -1,29 +1,52 @@
 package BaseTest;
 
 
+import BrowserActions.BrowserActions;
+import allure.allureReport;
+import com.google.common.io.Files;
 import constants.driverType;
 import driverFactory.selectDriverFactory;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Optional;
-import org.testng.annotations.Parameters;
+import org.testng.ITestResult;
+import org.testng.annotations.*;
+import ru.yandex.qatools.allure.report.AllureReportBuilderException;
 
 import java.io.File;
+import java.io.IOException;
 
-public class BaseTest  {
-     public ThreadLocal<WebDriver> driver=new ThreadLocal<>();
+import static constants.driverType.CHROME;
+
+public  class BaseTest  {
+     public static ThreadLocal<WebDriver> driver=new ThreadLocal<>();
+     BrowserActions  bActions;
     @BeforeClass
     @Parameters
     public synchronized void setUp(@Optional("CHROME") String browser){
          driver.set(selectDriverFactory.getDriverFactory(driverType.valueOf(browser)));
-         driver.get().get("https://demo.nopcommerce.com/");
+         bActions=new BrowserActions(driver.get());
+
+         bActions.getToUrl("https://demo.nopcommerce.com/");
+         bActions.maximizePage();
     }
-   /* @AfterClass
+    @AfterMethod
+  /*  public void ScreenShot (ITestResult result){
+        if(ITestResult.FAILURE == result.getStatus()){
+            var camera=(TakesScreenshot)driver.get();
+            File screenShot=camera.getScreenshotAs(OutputType.FILE);
+            try {
+                Files.move(screenShot,new File("resources/screenShots"+result.getName()+"png"));
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+
+        }}*/
+
+    @AfterClass
     public void tearDown(){
-        driver.get().quit();
-        *//*new AllureReportBuilder("1.5.4", new File("target/allure-report")).unpackFace();
-        new AllureReportBuilder("1.5.4", new File("target/allure-report")).processResults(new
-                File("target/allure-results"));*//*
-    }*/
+        bActions.closeWindows();
+    }
 }
+
+

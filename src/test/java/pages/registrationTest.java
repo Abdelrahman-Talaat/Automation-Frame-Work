@@ -1,7 +1,6 @@
 package pages;
 
 import BaseTest.BaseTest;
-import Listners.IRetryAnalyzerClass;
 import Pages.RegistrationPage;
 import Pages.homePage;
 import org.testng.Assert;
@@ -29,7 +28,8 @@ public  class RegistrationTest extends BaseTest {
         registration.getRegistrationMessage();
         registration.clickContinueButton();
         registration.getWelcomeMessage();
-        /*Assert.assertTrue(false);*/
+         Assert.assertTrue(false);
     }
+
 
 }

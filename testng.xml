@@ -3,12 +3,14 @@
 <suite name="All Test Suite">
     <listeners>
         <listener class-name="Listners.iTestListener"/>
-        <listener class-name="Listners.RetryListener"/>
+        <!--<listener class-name="Listners.IAnnotationTransforme"/>-->
+        <listener class-name="Listners.IExecutionListener"/>
+        <listener class-name="Listners.IMethodInterceptListener"/>
     </listeners>
             
     <test verbose="2" preserve-order="true" name="E:/testing/java/projects/nopCommerceFrameWork">
         <classes>
-            <class name="pages.RegistrationTest">
+            <class name="tests.AnnotationTransformerClass">
             </class>
         </classes>
     </test>

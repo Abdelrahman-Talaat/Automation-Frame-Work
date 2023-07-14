@@ -36,5 +36,6 @@ public class orderTest extends BaseTest {
         computer.removeProduct();
        /* driver.get().manage().timeouts().implicitlyWait(Duration.ofSeconds(100));*/
         Assert.assertEquals(computer.getSoppingCartMessage(),"Your Shopping Cart is empty!");
+        Assert.assertTrue(false);
     }
 }

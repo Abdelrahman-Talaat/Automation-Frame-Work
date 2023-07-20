@@ -5,7 +5,7 @@
     <listener class-name="Listners.iTestListener"/>
     <listener class-name="Listners.IExecutionListener"/>
   </listeners>
-  <test thread-count="5" name="E:/testing/java/projects/nopCommerceFrameWork(failed)">
+  <test thread-count="5" parallel="classes" name="E:/testing/java/projects/nopCommerceFrameWork(failed)">
     <classes>
       <class name="pages.RegistrationTest">
         <methods>

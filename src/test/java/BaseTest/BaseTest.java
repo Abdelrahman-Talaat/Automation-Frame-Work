@@ -2,10 +2,10 @@ package BaseTest;
 
 
 import BrowserActions.BrowserActions;
-import allure.allureReport;
 import com.google.common.io.Files;
 import constants.driverType;
 import driverFactory.selectDriverFactory;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -23,10 +23,9 @@ public  class BaseTest  {
      BrowserActions  bActions;
     @BeforeClass
     @Parameters
-    public synchronized void setUp(@Optional("CHROME") String browser){
-         driver.set(selectDriverFactory.getDriverFactory(driverType.valueOf(browser)));
+    public synchronized void setUp(@Optional("CHROME") String browserName){
+         driver.set(selectDriverFactory.getDriverFactory(driverType.valueOf(browserName)));
          bActions=new BrowserActions(driver.get());
-
          bActions.getToUrl("https://demo.nopcommerce.com/");
          bActions.maximizePage();
     }

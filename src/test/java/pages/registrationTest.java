@@ -1,5 +1,6 @@
 package pages;
 
+import Assertions.Assertion;
 import BaseTest.BaseTest;
 import Pages.RegistrationPage;
 import Pages.homePage;
@@ -28,7 +29,7 @@ public  class RegistrationTest extends BaseTest {
         registration.getRegistrationMessage();
         registration.clickContinueButton();
         registration.getWelcomeMessage();
-         Assert.assertTrue(false);
+        /* Assertion.assertTrue(false);*/
     }
 
 

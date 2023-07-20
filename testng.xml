@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite">
+<suite name="All Test Suite" >
     <listeners>
         <listener class-name="Listners.iTestListener"/>
-        <!--<listener class-name="Listners.IAnnotationTransforme"/>-->
         <listener class-name="Listners.IExecutionListener"/>
-        <listener class-name="Listners.IMethodInterceptListener"/>
     </listeners>
-            
-    <test verbose="2" preserve-order="true" name="E:/testing/java/projects/nopCommerceFrameWork">
+
+
+    <test  thread-count="2" name="E:/testing/java/projects/nopCommerceFrameWork" parallel="classes">
         <classes>
-            <class name="tests.AnnotationTransformerClass">
-            </class>
+            <class name="pages.RegistrationTest"/>
+            <class name="pages.orderTest"/>
         </classes>
     </test>
 </suite>

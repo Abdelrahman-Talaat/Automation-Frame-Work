@@ -14,6 +14,7 @@ import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
 public class ElementActions {
+    /** Set the Thread local driver **/
     public static ThreadLocal<WebDriver> actionDriver=new ThreadLocal<>();
     //pass the driver that will be used
     public ElementActions (WebDriver driver){

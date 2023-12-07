@@ -2,6 +2,7 @@ package pages;
 
 import Assertions.Assertion;
 import BaseTest.BaseTest;
+import ElementActions.ElementActions;
 import Pages.RegistrationPage;
 import Pages.homePage;
 import org.testng.Assert;
@@ -10,6 +11,7 @@ import org.testng.annotations.Test;
 public  class RegistrationTest extends BaseTest {
     homePage home;
     RegistrationPage registration;
+
 
 
     @Test  (suiteName = "registration"/*,retryAnalyzer = IRetryAnalyzerClass.class*/)

@@ -1,0 +1,36 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007fff7c9731b7, pid=37228, tid=123692
+#
+# JRE version: Java(TM) SE Runtime Environment 18.9 (11.0.16.1+1) (build 11.0.16.1+1-LTS-1)
+# Java VM: Java HotSpot(TM) 64-Bit Server VM 18.9 (11.0.16.1+1-LTS-1, mixed mode, tiered, compressed oops, g1 gc, windows-amd64)
+# Problematic frame:
+# V  [jvm.dll+0x3631b7]
+#
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   https://bugreport.java.com/bugreport/crash.jsp
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: io.qameta.allure.CommandLine serve target/allure-results
+
+Host: Intel(R) Core(TM) i5-3320M CPU @ 2.60GHz, 4 cores, 11G,  Windows 10 , 64 bit Build 19041 (10.0.19041.292)
+Time: Thu Aug 24 14:00:14 2023 Egypt Standard Time elapsed time: 3707340.563317 seconds (42d 21h 49m 0s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000016fdfc9b000):  JavaThread "AWT-Shutdown" [_thread_in_vm, id=123692, stack(0x0000000c18000000,0x0000000c18100000)]
+
+Stack: [0x0000000c18000000,0x0000000c18100000],  sp=0x0000000c180ff070,  free space=1020k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x3631b7]
+V  [jvm.dll+0x62a302]
+V  [jvm.dll+0x363c7a]
+V  [jvm.dll+0x363f07]
+V  [jvm.dll+0x3dd001]
+V  [jvm.dll+0x729f60]
+V  [jvm.dll+0x722b34]

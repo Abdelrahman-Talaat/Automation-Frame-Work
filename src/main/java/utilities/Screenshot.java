@@ -19,9 +19,7 @@ import static driverFactory.selectDriverFactory.driver;
 public  class Screenshot {
     public static void getScreenShot(ITestResult result)  throws IOException {
         File screenshotFile=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-        String path="E:/testing/java/projects/nopCommerceFrameWork/Screenshots";
         FileUtils.copyFile(screenshotFile,new File(".//Screenshots//"+result.getName()+".png"));
-      /*  Reporter.log( "'> <img src='"+ path + "' height='100' width='100'/> </a>");*/
 
 
 

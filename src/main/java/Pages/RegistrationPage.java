@@ -1,5 +1,6 @@
 package Pages;
 
+import Assertions.Assertion;
 import ElementActions.ElementActions;
 import driverFactory.selectDriverFactory;
 import org.openqa.selenium.By;
@@ -32,7 +33,7 @@ public class RegistrationPage {
 
 
     protected WebDriver driver;
-    ElementActions eAction;
+    ElementActions eAction  ;
     UserFormData userData;
  /*   public ThreadLocal<selectDriverFactory> eDriver=new ThreadLocal<>();*/
         public RegistrationPage (WebDriver driver){
@@ -87,11 +88,11 @@ public class RegistrationPage {
     }
 
     public void getWelcomeMessage(){
-        Assert.assertEquals(eAction.getText(welcomeMessageLocator),"Welcome to our store");
+        Assertion.assertEquals(eAction.getText(welcomeMessageLocator),"Welcome to our store");
     }
 
     public void getRegistrationMessage(){
-        Assert.assertEquals(eAction.getText(registrationMessageLocator),"Your registration completed");
+        Assertion.assertEquals(eAction.getText(registrationMessageLocator),"Your registration completed");
     }
 
 

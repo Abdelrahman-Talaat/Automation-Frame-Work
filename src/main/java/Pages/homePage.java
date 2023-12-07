@@ -39,4 +39,9 @@ public class homePage {
       clickLink("//a[@href='/computers']");
         return new computersPage(driver);
     }
+
+    public shopCart clickOnShopCart(){
+       clickLink("//span[@class='cart-label']");
+       return new shopCart(driver);
+    }
 }

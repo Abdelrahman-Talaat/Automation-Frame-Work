@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[Method Name is :registrationTest]]>
     </line>
     <line>
-      <![CDATA[Method Name is :computerOrderTest]]>
+      <![CDATA[Method Name is :shopCartTest]]>
     </line>
     <line>
       <![CDATA[Status Of Execution is 1]]>
     </line>
     <line>
-      <![CDATA[Status Of Execution is 1]]>
+      <![CDATA[<a href="E:\testing\java\projects\nopCommerceFrameWork\Screenshots">ScreenShot</a>]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-07-18T17:38:09 EET" name="All Test Suite" finished-at="2023-07-18T17:38:43 EET" duration-ms="34529">
+  <suite started-at="2023-11-24T23:37:11 EET" name="All Test Suite" finished-at="2023-11-24T23:37:25 EET" duration-ms="13958">
     <groups>
     </groups>
-    <test started-at="2023-07-18T17:38:09 EET" name="E:/testing/java/projects/nopCommerceFrameWork" finished-at="2023-07-18T17:38:43 EET" duration-ms="34529">
+    <test started-at="2023-11-24T23:37:11 EET" name="E:/testing/java/projects/nopCommerceFrameWork" finished-at="2023-11-24T23:37:25 EET" duration-ms="13958">
       <class name="pages.RegistrationTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:pages.RegistrationTest@bb095]" started-at="2023-07-18T17:38:09 EET" name="setUp" finished-at="2023-07-18T17:38:27 EET" duration-ms="18582" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:pages.RegistrationTest@4c9e38]" started-at="2023-11-24T23:37:11 EET" name="setUp" finished-at="2023-11-24T23:37:23 EET" duration-ms="12090" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -30,27 +30,83 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="registrationTest()[pri:0, instance:pages.RegistrationTest@bb095]" started-at="2023-07-18T17:38:27 EET" name="registrationTest" finished-at="2023-07-18T17:38:38 EET" duration-ms="10470" status="PASS">
+        <test-method signature="registrationTest()[pri:0, instance:pages.RegistrationTest@4c9e38]" started-at="2023-11-24T23:37:23 EET" name="registrationTest" finished-at="2023-11-24T23:37:24 EET" duration-ms="815" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: stale element not found
+  (Session info: chrome=116.0.5845.141)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [78a301483bd476b39839629634b14f72, clickElement {id=D29EEBE98542320FA1BCD41DFEDBB7ED_element_51}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.141, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\ABDEL-~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54432}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54432/devtoo..., se:cdpVersion: 116.0.5845.141, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (78a301483bd476b39839629634b14f72)] -> xpath: //a[@href='/register?returnUrl=%2F']]
+Session ID: 78a301483bd476b39839629634b14f72]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=116.0.5845.141)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [78a301483bd476b39839629634b14f72, clickElement {id=D29EEBE98542320FA1BCD41DFEDBB7ED_element_51}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.141, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\ABDEL-~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54432}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54432/devtoo..., se:cdpVersion: 116.0.5845.141, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (78a301483bd476b39839629634b14f72)] -> xpath: //a[@href='/register?returnUrl=%2F']]
+Session ID: 78a301483bd476b39839629634b14f72
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at ElementActions.ElementActions.click(ElementActions.java:26)
+at Pages.homePage.clickLink(homePage.java:24)
+at Pages.homePage.clickRegistrationPage(homePage.java:28)
+at pages.RegistrationTest.registrationTest(RegistrationTest.java:21)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1589)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
             <line>
               <![CDATA[Method Name is :registrationTest]]>
             </line>
             <line>
-              <![CDATA[Status Of Execution is 1]]>
+              <![CDATA[<a href="E:\testing\java\projects\nopCommerceFrameWork\Screenshots">ScreenShot</a>]]>
             </line>
           </reporter-output>
         </test-method> <!-- registrationTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pages.RegistrationTest@bb095]" started-at="2023-07-18T17:38:38 EET" name="tearDown" finished-at="2023-07-18T17:38:39 EET" duration-ms="921" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:pages.RegistrationTest@4c9e38]" started-at="2023-11-24T23:37:24 EET" name="tearDown" finished-at="2023-11-24T23:37:25 EET" duration-ms="354" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pages.RegistrationTest@bb095]" started-at="2023-07-18T17:38:39 EET" name="tearDown" finished-at="2023-07-18T17:38:39 EET" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:pages.RegistrationTest@4c9e38]" started-at="2023-11-24T23:37:25 EET" name="tearDown" finished-at="2023-11-24T23:37:25 EET" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- pages.RegistrationTest -->
-      <class name="pages.orderTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:pages.orderTest@5dc3fcb7]" started-at="2023-07-18T17:38:09 EET" name="setUp" finished-at="2023-07-18T17:38:30 EET" duration-ms="20958" status="PASS">
+      <class name="pages.ShopCartTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:pages.ShopCartTest@5467eea4]" started-at="2023-11-24T23:37:11 EET" name="setUp" finished-at="2023-11-24T23:37:23 EET" duration-ms="12088" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -61,25 +117,25 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="computerOrderTest()[pri:0, instance:pages.orderTest@5dc3fcb7]" started-at="2023-07-18T17:38:30 EET" name="computerOrderTest" finished-at="2023-07-18T17:38:43 EET" duration-ms="13018" status="PASS">
+        <test-method signature="shopCartTest()[pri:0, instance:pages.ShopCartTest@5467eea4]" started-at="2023-11-24T23:37:23 EET" name="shopCartTest" finished-at="2023-11-24T23:37:24 EET" duration-ms="858" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[Method Name is :computerOrderTest]]>
+              <![CDATA[Method Name is :shopCartTest]]>
             </line>
             <line>
               <![CDATA[Status Of Execution is 1]]>
             </line>
           </reporter-output>
-        </test-method> <!-- computerOrderTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pages.orderTest@5dc3fcb7]" started-at="2023-07-18T17:38:43 EET" name="tearDown" finished-at="2023-07-18T17:38:43 EET" duration-ms="384" status="PASS">
+        </test-method> <!-- shopCartTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:pages.ShopCartTest@5467eea4]" started-at="2023-11-24T23:37:24 EET" name="tearDown" finished-at="2023-11-24T23:37:25 EET" duration-ms="437" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pages.orderTest@5dc3fcb7]" started-at="2023-07-18T17:38:43 EET" name="tearDown" finished-at="2023-07-18T17:38:43 EET" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:pages.ShopCartTest@5467eea4]" started-at="2023-11-24T23:37:25 EET" name="tearDown" finished-at="2023-11-24T23:37:25 EET" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- pages.orderTest -->
+      </class> <!-- pages.ShopCartTest -->
     </test> <!-- E:/testing/java/projects/nopCommerceFrameWork -->
   </suite> <!-- All Test Suite -->
 </testng-results>

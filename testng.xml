@@ -10,7 +10,7 @@
     <test  thread-count="2" name="E:/testing/java/projects/nopCommerceFrameWork" parallel="classes">
         <classes>
             <class name="pages.RegistrationTest"/>
-            <class name="pages.orderTest"/>
+            <class name="pages.ShopCartTest"/>
         </classes>
     </test>
 </suite>

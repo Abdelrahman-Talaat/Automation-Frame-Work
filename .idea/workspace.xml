@@ -5,32 +5,54 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a60d880-01b1-42be-82b9-47466ee05c79" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ExcelSheet/Data_Driven_Rest_Json.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ExcelSheet/paraBank-Excel-Sheet.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Assertions/Assertion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DataDriven/Data_Driven_Json.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DataDriven/Data_Driven_Xml_Excel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/DataDrivenTest/RestTest_JSON.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/DataDrivenTest/RestTest_XML.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/junitreports/TEST-pages.orderTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Screenshots/shopCartTest.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Pages/shopCart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/ShopCartTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/junitreports/TEST-pages.ShopCartTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Screenshots/registrationTest.png" beforeDir="false" afterPath="$PROJECT_DIR$/Screenshots/registrationTest.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/allure/allureReport.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BaseTest/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BaseTest/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/orderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/orderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/registrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/registrationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/1eed8f8a-d867-473d-834b-7a9ef44bf7b5-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/41790634-0215-465e-b1c4-3ad56a1df6d8-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/9e7ab3c6-918d-4f72-8147-efb44b1450d9-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/b501311f-ea3a-4274-ac40-5952675e195b-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/allure/allureReport.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/BaseTest/BaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/BaseTest/BaseTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/orderTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/orderTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/registrationTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/registrationTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ElementActions/ElementActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ElementActions/ElementActions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/RegistrationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/RegistrationPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/homePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/homePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utilities/Screenshot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/Screenshot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/RegistrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/RegistrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/0f3af139-c06d-4fae-8c23-0727ba036d22-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/0f60ee73-2bbe-404c-bdd9-74448f9362b0-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/0f64473e-9e14-4475-a90a-46e26fb9688c-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/232c0464-c92d-4189-82a8-16c2dab0de00-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/28f57218-a63d-4ecb-a888-817dd1e05095-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/32f2b9f6-43b1-486a-8657-ce020d77bb97-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/3f4ac8d4-67d1-4199-9a37-9476dc354c8b-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/3f794d11-bcb7-4eb2-942b-2a9087c8b57f-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/4783a82b-e0de-4607-8975-470d4dc3ffd4-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/4a8a236f-917b-4e2c-b1c5-10483377ad0c-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/5457f8bd-ae50-43f9-9385-e0e8f8e44fa6-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/649a7d25-e921-4714-83ec-3f2b0f323edd-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/94481695-1aa3-4c55-b3cf-f6d9376f19d4-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/9ab26ac1-31c8-47da-adf5-d6d099a24432-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/bc8d3dff-49cd-43e3-ae8a-1468f0566a9a-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/bd570655-7c3b-4118-abf8-f3ffc5d1a4c9-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/c0adf8d6-99ee-4e66-924f-3cc0a9605596-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/c1f784c3-e6c3-4082-ba99-80ecdc70eaf4-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/cfa57f62-01ff-4618-ad1e-3673fad63370-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/db116969-0061-413a-9561-24c2cb2a4712-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/edea4792-374b-47f5-a1e0-76d75a47c77a-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/ee4243ba-3443-46e6-b9f9-6b4bf80e573e-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/effd97ef-f73a-4acf-b12f-d81cf49a764c-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/f29590f5-43cb-42d1-9267-05e93767e2f1-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/f2c1be74-3b0d-499a-95a5-ed81b42dfb5f-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/f83dd9a9-392b-4d4b-94c6-a910fd220741-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/f86ccfa9-990d-42b8-a15a-5a1e4146754f-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/fe253539-d3f0-4ac7-92de-dcb8822102d0-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/DataDriven/Data_Driven_Json.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DataDriven/Data_Driven_Json.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ElementActions/ElementActions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ElementActions/ElementActions.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Pages/RegistrationPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pages/RegistrationPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Pages/homePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pages/homePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utilities/Screenshot.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utilities/Screenshot.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/DataDrivenTest/RestTest_JSON.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/DataDrivenTest/RestTest_JSON.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/All Test Suite/E__testing_java_projects_nopCommerceFrameWork.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/All Test Suite/E__testing_java_projects_nopCommerceFrameWork.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/All Test Suite/E__testing_java_projects_nopCommerceFrameWork.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/All Test Suite/E__testing_java_projects_nopCommerceFrameWork.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/All Test Suite/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/All Test Suite/testng-failed.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/emailable-report.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/junitreports/TEST-pages.RegistrationTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/junitreports/TEST-pages.RegistrationTest.xml" afterDir="false" />
@@ -41,7 +63,6 @@
       <change beforePath="$PROJECT_DIR$/test-output/old/All Test Suite/testng.xml.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/All Test Suite/testng.xml.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/old/All Test Suite/toc.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/All Test Suite/toc.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/old/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/testng-failed.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/testng-results.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
@@ -109,7 +130,7 @@
       <recent name="utilities" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.RestTest_XML.checkData">
+  <component name="RunManager" selected="TestNG.E:/testing/java/projects/nopCommerceFrameWork/testng.xml">
     <configuration name="E:/testing/java/projects/nopCommerceFrameWork/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="nopCommerceFrameWork" />
       <shortenClasspath name="NONE" />
@@ -187,28 +208,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="orderTest.computerOrderTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ShopCartTest.shopCartTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="nopCommerceFrameWork" />
-      <shortenClasspath name="NONE" />
-      <useClassPathOnly />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="pages.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SUITE_NAME" value="" />
       <option name="PACKAGE_NAME" value="pages" />
-      <option name="MAIN_CLASS_NAME" value="pages.orderTest" />
-      <option name="METHOD_NAME" value="computerOrderTest" />
-      <option name="GROUP_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="pages.ShopCartTest" />
+      <option name="METHOD_NAME" value="shopCartTest" />
       <option name="TEST_OBJECT" value="METHOD" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="PROPERTIES_FILE" value="" />
       <properties />
       <listeners />
       <method v="2">
@@ -216,19 +227,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="TestNG.ShopCartTest.shopCartTest" />
       <item itemvalue="TestNG.RestTest_XML.checkData" />
       <item itemvalue="TestNG.E:/testing/java/projects/nopCommerceFrameWork/testng.xml" />
-      <item itemvalue="TestNG.orderTest.computerOrderTest" />
       <item itemvalue="TestNG.RegistrationTest.changeInvocationCountOfMethod" />
       <item itemvalue="TestNG.RegistrationTest.registrationTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.RestTest_XML.checkData" />
         <item itemvalue="TestNG.E:/testing/java/projects/nopCommerceFrameWork/testng.xml" />
-        <item itemvalue="TestNG.RegistrationTest.changeInvocationCountOfMethod" />
         <item itemvalue="TestNG.RegistrationTest.registrationTest" />
-        <item itemvalue="TestNG.orderTest.computerOrderTest" />
+        <item itemvalue="TestNG.ShopCartTest.shopCartTest" />
+        <item itemvalue="TestNG.RestTest_XML.checkData" />
+        <item itemvalue="TestNG.RegistrationTest.changeInvocationCountOfMethod" />
       </list>
     </recent_temporary>
   </component>
@@ -266,10 +277,6 @@
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.AssertionError" package="java.lang" />
           <option name="timeStamp" value="1" />
-        </breakpoint>
-        <breakpoint enabled="true" type="java-exception">
-          <properties class="java.net.SocketException" package="java.net" />
-          <option name="timeStamp" value="2" />
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
